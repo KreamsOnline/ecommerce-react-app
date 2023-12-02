@@ -1,0 +1,85 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Anime T-Shirt",
+        "category": "Anime",
+        "description": "High-quality anime-themed T-shirt",
+        "price": 19.99,
+        "imageUrl": "/images/anime-tshirt.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Basketball",
+        "category": "Sports",
+        "description": "Professional outdoor basketball",
+        "price": 29.99,
+        "imageUrl": "/../products/kreamsonline_custom_basketball.png"
+      },
+      {
+        "id": 3,
+        "name": "Anime Poster",
+        "category": "Anime",
+        "description": "Exclusive anime poster",
+        "price": 9.99,
+        "imageUrl": "/images/anime-poster.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Anime Action Figure",
+        "category": "Anime",
+        "description": "Collectible anime action figure",
+        "price": 39.99,
+        "imageUrl": "/images/anime-figure.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Basketball Jersey",
+        "category": "Sports",
+        "description": "High-quality basketball jersey",
+        "price": 49.99,
+        "imageUrl": "/images/basketball-jersey.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Anime Wall Scroll",
+        "category": "Anime",
+        "description": "Decorative anime wall scroll",
+        "price": 24.99,
+        "imageUrl": "/images/anime-wallscroll.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Basketball Shoes",
+        "category": "Sports",
+        "description": "Comfortable and durable basketball shoes",
+        "price": 79.99,
+        "imageUrl": "/images/basketball-shoes.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Anime Blu-ray Set",
+        "category": "Anime",
+        "description": "Complete anime series on Blu-ray",
+        "price": 59.99,
+        "imageUrl": "/images/anime-bluray.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Basketball Hoop",
+        "category": "Sports",
+        "description": "Portable and adjustable basketball hoop",
+        "price": 199.99,
+        "imageUrl": "/images/basketball-hoop.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Anime Manga Set",
+        "category": "Anime",
+        "description": "Box set of popular manga series",
+        "price": 89.99,
+        "imageUrl": "/images/anime-manga.jpg"
+      }
+    ]
+  }
+  
