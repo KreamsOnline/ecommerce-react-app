@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 import ProductActions from '@/app/ui/products/product-actions';
 import CompactProductCard from '@/app/ui/products/compactproduct-card';
+import CustomerReviews from '@/app/ui/products/customer-reviews';
 
 const ProductDetailPage: React.FC = () => {
     const router = useRouter();
@@ -14,6 +15,12 @@ const ProductDetailPage: React.FC = () => {
     const products = productsData.products
     const id = 2;
     const foundProduct = products.find(p => p.id === id);
+    // Dummy data for existing reviews
+    const reviews = [
+        { id: 1, author: 'John Doe', comment: 'Great product!', rating: 4 },
+        { id: 2, author: 'Jane Smith', comment: 'I love it!', rating: 5 },
+        // Add more reviews as needed
+    ];
     
     console.log(foundProduct);
 
@@ -70,7 +77,7 @@ const ProductDetailPage: React.FC = () => {
     return (
         <div className="container mx-auto p-4">
             <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 pl-4">
                     <Image src={product.imageUrl} alt={product.name} width={500} height={500} />
                 </div>
                 <div className="w-full md:w-1/2 md:pl-4">
@@ -81,7 +88,7 @@ const ProductDetailPage: React.FC = () => {
                         <ProductActions />
                     </div>
                     {/* Customer Reviews */}
-                    <div className="container mx-auto max-w-screen-lg overflow-hidden p-4">
+                    <div className="container mx-auto max-w-screen-lg overflow-hidden m-4 p-9">
                     <Slider {...settings}>
                         {products.map(product => (
                             <div key={product.id} className="px-2">
@@ -96,6 +103,7 @@ const ProductDetailPage: React.FC = () => {
                 </div>
             </div>
             {/* Related Products Section */}
+            <CustomerReviews reviews={reviews}/>
         </div>
     );
 };

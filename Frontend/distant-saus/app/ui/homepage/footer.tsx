@@ -1,9 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import FollowUs from './follow-us';
 
 const Footer: React.FC = () => {
     return (
         <footer className="bg-gray-800 text-white py-8">
+            <div className='p-4 pt-0'>
+                <FollowUs />
+            </div>
             <div className="container mx-auto px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
