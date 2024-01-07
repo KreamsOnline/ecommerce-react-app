@@ -21,7 +21,7 @@ const ProductActions: React.FC = () => {
 
             {/* Product Details Dropdown */}
             <div className="mt-2">
-                <button onClick={() => setDetailsOpen(!detailsOpen)} className="w-full text-white py-2 px-4 bg-gray-800 rounded">
+                <button onClick={() => setDetailsOpen(!detailsOpen)} className="w-full text-white py-2 px-4 bg-gray-800 rounded hover:bg-blue-700">
                     Product Details
                 </button>
                 {detailsOpen && <div className="p-2 border border-t-0">Some details about the product...</div>}
@@ -29,7 +29,7 @@ const ProductActions: React.FC = () => {
 
             {/* Shipping & Returns Dropdown */}
             <div className="mt-2">
-                <button onClick={() => setShippingOpen(!shippingOpen)} className="w-full text-white py-2 px-4 bg-gray-800 rounded">
+                <button onClick={() => setShippingOpen(!shippingOpen)} className="w-full text-white py-2 px-4 bg-gray-800 rounded hover:bg-blue-700">
                     Shipping & Returns
                 </button>
                 {shippingOpen && <div className="p-2 border border-t-0">Shipping and return information...</div>}
@@ -37,7 +37,7 @@ const ProductActions: React.FC = () => {
 
             {/* Share Dropdown */}
             <div className="mt-2">
-                <button onClick={() => setShareOpen(!shareOpen)} className="w-full text-white py-2 px-4 bg-gray-800 rounded">
+                <button onClick={() => setShareOpen(!shareOpen)} className="w-full text-white py-2 px-4 bg-gray-800 rounded hover:bg-blue-700">
                     Share
                 </button>
                 {shareOpen && <div className="p-2 border border-t-0">Share options...</div>}

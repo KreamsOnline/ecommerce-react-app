@@ -6,6 +6,7 @@ import { FaShoppingCart, FaUser, FaUserCircle } from 'react-icons/fa';
 import StretchingSearchBar from '../ui/homepage/stretchingsearchbar';
 import CartIcon from '../ui/products/cart-icon';
 import CategoryNavbar from '../ui/products/category-navbar';
+import SearchBarModal from '../ui/homepage/searchbarmodal';
 
 
 const Header: React.FC = () => {
@@ -23,12 +24,9 @@ const Header: React.FC = () => {
                 {/* Logo */}
                 <div className="text-xl font-bold">
                     <Link href="/">
-                        Your Logo
+                        Distant Saus
                     </Link>
                 </div>
-
-                {/* Search Bar */}
-                <StretchingSearchBar />
 
                 {/* Navigation Menu */}
                 <div>
@@ -61,6 +59,7 @@ const Header: React.FC = () => {
                             <p>{userInfo.role}</p>
                         </div>
                     </div>
+                    <SearchBarModal />
                     <Link href="/cart">
                             <CartIcon />
                     </Link>

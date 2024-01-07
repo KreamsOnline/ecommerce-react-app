@@ -26,10 +26,10 @@ const customizationOptions = [
 const CustomizationShowcase: React.FC = () => {
     return (
         <div className="container mx-auto my-10 p-4">
-            <h2 className="text-2xl font-bold mb-6">Customization Showcase</h2>
+            <h2 className="text-2xl text-center font-bold mb-6">Customization Showcase</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {customizationOptions.map(option => (
-                    <div key={option.id} className="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+                    <div key={option.id} className="rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition duration-300">
                         <img src={option.imageUrl} alt={option.title} className="w-full h-64 object-cover" />
                         <div className="p-4">
                             <h3 className="font-bold text-lg mb-2">{option.title}</h3>

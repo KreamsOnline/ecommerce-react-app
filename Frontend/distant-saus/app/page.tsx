@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-cover " style={{ backgroundImage: `url('./backgrounds/background-main-distant-saus.png')`, right: 0 }}>
                   
       <HeroSection 
           title="Welcome to Our Store"

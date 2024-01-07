@@ -10,7 +10,7 @@ type HeroSectionProps = {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ title, description, buttonText, buttonLink }) => {
     return (
-        <div className="hero-section bg-cover bg-center h-screen" style={{ backgroundImage: `url('/path-to-your-hero-image.jpg')` }}>
+        <div className="hero-section bg-stretch bg-center h-screen" >
             <div className="container mx-auto h-full flex flex-col justify-center items-center text-center text-white">
                 <h1 className="text-5xl font-bold mb-4">{title}</h1>
                 <p className="text-xl mb-8">{description}</p>
